@@ -9,12 +9,7 @@ function App() {
   const [toggleSideBar,setToggleSideBar] = useState(false)
   const [pipeData,setPipe] = useState({})
   const [paramsData,setParamsData] = useState([])
-//   const handleToggleSideBar = () =>{
-//     setToggleSideBar(!toggleSideBar)
-// }
-// let pData = []
-const DataContextValue ={
-  
+const DataContextValue ={  
   toggleSideBar,setToggleSideBar,
   paramsData,setParamsData,
   pipeData,setPipe

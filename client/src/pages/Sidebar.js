@@ -3,7 +3,6 @@ import { DataContext } from '../App';
 
 const Sidebar = (props) => {
     const {setToggleSideBar,paramsData,pipeData} = useContext(DataContext)
-    console.log(paramsData)
     const {pipeline_name,load_status,target_table_action,natural_key,load_action,delta_fields} = {...pipeData}
     function handletoggle (){
         setToggleSideBar(false)
@@ -25,8 +24,8 @@ const Sidebar = (props) => {
                 <hr/>
                 <h3>Params:</h3>
                 <div className="row4">
-                    {paramsData.map(data=>{
-                        return  <div>
+                    {paramsData.map((data,i)=>{
+                        return  <div key={i}>
 
                         <h4 className='main'>{data.value && data.value}</h4>
                         <span><span className='labelHeading'>Group: </span> <h5 className='ValueHeading'> {data.group}</h5></span>

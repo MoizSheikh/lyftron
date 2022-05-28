@@ -2,26 +2,15 @@
 $accColor : #1f9e50;
 $secColor: #52b68d;
 $tColor : #08c18a;
-// .containSide{
-//     font-family: 'Poppins', sans-serif;
-//     width: 100vw;
-//     min-height: 100vh;
-//     max-height: 200vh;
-//     overflow-y: scroll;
-//     height: min-content;
-//     display: flex;
-    
-// }
+
 .sidebar{
     font-family: 'Poppins', sans-serif;
     padding:2%;
     min-width: 25%;
     margin-left: 10px;
     border-radius: 5px;
-    // min-height: 100vh;
     max-height: 200vh;
     overflow-y: scroll;
-    // background-color: #282952;
     background-color: white;
     font-weight: bold;
     color: Black;
@@ -88,8 +77,6 @@ $tColor : #08c18a;
 
    .sidebar{
     box-shadow: 0 0 10px gray;
-    // box-shadow: inset 0 0 10px;
-    // box-shadow: 5px 5px 10px;
       position: absolute;
       right: 20px;
       width: 50%;

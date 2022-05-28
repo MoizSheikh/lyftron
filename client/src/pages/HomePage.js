@@ -4,7 +4,6 @@ import HomepageCard from './Homepage_card';
 
 const Homepage = (props) => {
     const[search,setSearch]=useState(APIDATA);
-    console.log(APIDATA)
     function handleSearch(e){
         e = e.toLowerCase()
         if(e===''){
@@ -29,9 +28,8 @@ const Homepage = (props) => {
             <hr/>
             <div className="homepageCon">
 
-                {/* {APIDATA.map((data)=>{ */}
                 {search.length ? search.map((data)=>{
-                    return <HomepageCard {...data}/>
+                    return <HomepageCard key={data.id} {...data}/>
                 }) : <h3>NO DATA</h3>}
             </div>
 

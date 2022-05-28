@@ -11,12 +11,10 @@ const HomepageCardExtend = ({pipeline_name,load_status,source_table,target_table
             firstUpdate.current = false;
             return;
           }
-        console.log(paramsData)
         setToggleSideBar(true)
 
     }, [paramsData]);
     const handleToggle = () =>{
-        console.log('toggled worked')
         setParamsData(params)
         setPipe({...pipeData,pipeline_name,load_status,source_table,target_table,target_table_action,natural_key,load_action,delta_fields})
     }
