@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto:wght@300&display=swap');
+$accColor : #1f9e50;
+$secColor: #52b68d;
+$tColor : #08c18a;
+
+.labelHeading{
+    color: black;
+}
+.ValueHeading{
+    font-weight: bold;
+    color: $secColor;
+}
+.contain{
+    font-family: 'Poppins', sans-serif;
+    background-color: #C5CABD;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    
+    
+}
+.homepage{
+    height: fit-content;
+    width: 100%;
+    min-width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    .inputDiv{
+        text-align: center;
+    }
+    input {
+        text-align: center;
+        height: 35px;
+        width: 200px;
+      }
+      
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+      
+      :-moz-placeholder {
+        text-align: center;
+      }
+    h2{
+        text-align: center;
+    }
+    .homepageCon{
+        width: 100%;
+    }
+}
+.homepageCard{
+    padding: 20px;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    .row1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            align-items: center;
+            h4{
+                font-weight: bold;
+            }
+        }
+        span{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 40px;
+            background: #1f9e50;
+            border-radius: 30px;
+            color: white;
+            line-height: 40px;
+            img{
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+
+    .row2{
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid green;
+        height: 80px;
+        padding: 0 5px;
+        justify-content: space-between;
+
+        span{
+            height: 40%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            h4{
+
+                color: $accColor;
+            }
+            img{
+                width: 25px;
+                margin-right: 5px;
+                
+            }
+        }
+
+    }
+    .row3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 30px;
+        .date1{
+            text-align: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                color: $secColor;
+                font-weight: bold;
+            }
+        }
+
+    }
+    .row4{
+        text-align: center;
+        button{
+            background-color: $tColor;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            border:none;
+            height:40px;
+            line-height: 40px;
+            &:hover{
+                background-color: $secColor;
+            }
+            img{
+                height: 70%;
+                vertical-align: middle;
+
+            }
+        }
+    }
+}
+
+
+.homepageCardExtendCon{
+    display: flex;
+    overflow-x: scroll;
+    .homepageCardExtend{
+        background-color: $tColor;
+        min-width: 300px;
+        margin: 4px;
+        padding: 15px;
+        color: white;
+        border-radius: 2px;
+        .name{
+            h4{
+                color: black;
+                margin: 5px;
+            }
+        }
+
+        button{
+            display: flex;
+            width: 90px;
+            height: 30px;
+            border: none;
+            border-radius: 4px;
+            background-color: white;
+            color:$secColor;
+            font-weight: bold;
+            align-items: center;
+            img{
+                height: 25px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:800px){
+
+    .homepage{
+        .row1{
+            flex-direction: column-reverse;
+        }
+    
+    }
+}
+@media (max-width:686px){
+
+    .contain{
+      
+        padding: 10px;
+    }
+
+    .homepageCard{
+        .row3{
+            padding: 10px;
+            flex-direction: column;
+
+            .date1{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                
+            }
+        }
+
+    }
+    .homepageCardExtendCon{
+        .homepageCardExtend{
+            min-width: 250px;
+        }
+    }
+}
